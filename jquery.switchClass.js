@@ -1,6 +1,8 @@
+//Extending the Jquery prototype
+
 (function ($) {
-	$.fn.switchClass = function(startClass, finalClass) {
-		this.removeClass(startClass);
-		this.addClass(finalClass);
-	}
-}(jQuery));
+	$.fn.switchClass = function(previousClass, currentClass) {
+		this.removeClass(previousClass);
+		this.addClass(currentClass);
+	};
+})(jQuery);
